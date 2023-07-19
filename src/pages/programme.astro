@@ -1,0 +1,30 @@
+---
+import Nav from "../components/Nav.astro";
+import Programmecard from "../components/Programmecard.astro";
+
+---
+
+<Nav />
+
+<template>
+  <div class="card-container">
+    <Programmecard
+      title="Titel 1"
+      content="Dette er indholdet til kort 1."
+      image="stien/til/billede1.jpg"
+    />
+   <Programmecard
+      title="Titel 2"
+      content="Dette er indholdet til kort 2."
+      image="stien/til/billede2.jpg"
+    />
+  </div>
+</template>
+
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+</style>
