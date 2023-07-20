@@ -5,6 +5,8 @@ import Event from "../components/Event.astro";
 ---
 
 <Layout title="programme">
+  <h1>Programme</h1>
+  <h2>22. april 2024</h2>
   <Event />
   <template>
     <div class="card-container">
@@ -14,9 +16,23 @@ import Event from "../components/Event.astro";
   </template>
 </Layout>
 <style>
+  * {
+    font-family: "Roboto", sans-serif;
+  }
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-left: 355px;
+    margin-top: 80px;
   }
 </style>

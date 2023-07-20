@@ -40,9 +40,12 @@ const eventsData = [
           <p>
             {event.timeStart} - {event.timeEnd} - {event.stage} stage
           </p>
-          <a href="#">
-            READ MORE <img src="./img/Phoneiconpink.svg" />
-          </a>
+
+          <div class="knap">
+            <a href="#">
+              READ MORE <img src="./img/Phoneiconpink.svg" />
+            </a>
+          </div>
         </div>
       </article>
     ))
@@ -54,10 +57,20 @@ const eventsData = [
     background-color: var(--pink-bg);
     padding: 0.5rem;
     display: flex;
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    border-radius: 10px;
   }
 
   .tekstkasse {
     display: flex;
     padding: 10px;
+    flex-direction: column;
+  }
+
+  .knap {
+    display: flex;
+    justify-content: flex-end;
   }
 </style>

@@ -164,7 +164,7 @@
   --fine-print-desktop-font-size: 11pt;
   --fine-print-desktop-paragraph-spacing: 0;
   --fine-print-desktop-letter-spacing: -0.03em;
-  /* --footer-desk-fine-print-font-family: "articulat-cf", Arial, sans-serif;
+  --footer-desk-fine-print-font-family: "articulat-cf", Arial, sans-serif;
   --footer-desk-fine-print-font-weight: 600;
   --footer-desk-fine-print-font-size: 16pt;
   --footer-desk-fine-print-paragraph-spacing: 0;
@@ -178,7 +178,7 @@
   --footer-desk-listtitle-font-size: 1.19rem;
   --footer-desk-listtitle-paragraph-spacing: 1.2em;
   --footer-desk-listtitle-text-case: capitalize;
-  --footer-desk-listtitle-text-decoration: none; */
+  --footer-desk-listtitle-text-decoration: none;
   --br-textfield: 5px;
   --textfield-shadow-active-x: 0;
   --textfield-shadow-active-y: 0;
