@@ -1,0 +1,63 @@
+---
+const eventsData = [
+  {
+    img: "./img/eventbillede1.svg",
+    alt: "billede",
+    title: "Test",
+    shortText: "A colorful day",
+    timeStart: "10:00",
+    timeEnd: "10:45",
+    stage: "Main",
+  },
+  {
+    img: "./img/eventbillede1.svg",
+    title: "Test2",
+    shortText: "A colorful day again",
+    timeStart: "11:00",
+    timeEnd: "11:45",
+    stage: "Second",
+  },
+  {
+    img: "./img/eventbillede1.svg",
+    title: "Test2",
+    shortText: "A colorful day again",
+    timeStart: "11:00",
+    timeEnd: "11:45",
+    stage: "Second",
+  },
+];
+---
+
+<ul>
+  {
+    eventsData.map((event) => (
+      <article>
+        <img src={event.img} alt={event.alt} />
+        <div class="tekstkasse">
+          <h2>{event.title}</h2>
+
+          <p>{event.shortText}</p>
+          <p>
+            {event.timeStart} - {event.timeEnd} - {event.stage} stage
+          </p>
+          <a href="#">
+            READ MORE <img src="./img/Phoneiconpink.svg" />
+          </a>
+        </div>
+      </article>
+    ))
+  }
+</ul>
+
+<style>
+  article {
+    background-color: var(--pink-bg);
+    padding: 0.5rem;
+    display: flex;
+  }
+
+  .tekstkasse {
+    display: flex;
+    padding: 10px;
+  }
+</style>

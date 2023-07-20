@@ -1,12 +1,22 @@
 ---
-import Nav from "../components/Nav.astro";
 import Herosection from "../components/Herosection.astro";
+import NewsCard from "../components/NewsCard.astro";
 import Smalltext from "../components/Smalltext.astro";
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Nav />
-<Herosection />
-<Smalltext />
+<Layout title="home">
+  <Herosection />
+  <Smalltext />
+  <section>
+    <NewsCard src="./img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+    <NewsCard src="./img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+    <NewsCard src="./img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+  </section>
+</Layout>
 
-
+<style>
+  section .hero {
+    margin: 0;
+  }
+</style>
