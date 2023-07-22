@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="contact">
-  <main>
+  <section class="contactindhold">
     <div class="overskrifter">
       <h1>Contact</h1>
       <h2>Send us a message</h2>
@@ -569,7 +569,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-  </main>
+  </section>
 </Layout>
 
 <script>
@@ -652,9 +652,10 @@ import Layout from "../layouts/Layout.astro";
     gap: var(--spacing-max);
   }
 
-  body {
+  .contactindhold {
     background-color: #ffebee;
     background-image: url(public/img/backgroundimagecontact.svg);
+    padding-bottom: 5px;
   }
 
   h2 {
@@ -675,7 +676,7 @@ import Layout from "../layouts/Layout.astro";
     .contactshortcuts {
       margin-bottom: 30px;
     }
-    h1{
+    h1 {
       font-size: 2.1667rem;
     }
   }
