@@ -1,0 +1,183 @@
+---
+import Contacttile from "../components/Contacttile.astro";
+---
+
+<section class="contactindhold">
+  <h1>Your stand can also be here!</h1>
+  <section id="contactinfo">
+    <div id="infocol">
+      <a id="address" href="https://www.openstreetmap.org/#map=19/55.66128/12.56363" target="_blank">
+        <p>It’s a great way to promote your group or business among our visitors and enrich the experience of Japan in Denmark. If you would like to participate with your own stand, just fill the form to the right. The organising comitee will get back to you with more information as soon as possible. You can also see the contact information here. Sign your Booth up for next year.</p>
+      </a>
+    </div>
+    <div class="contactform">
+      <form id="contform">
+        <div>
+          <label for="namefield">Your or your organisation's name:</label>
+          <input form="contform" type="text" name="name" id="namefield" placeholder="Anders Andersen" />
+        </div>
+        <div>
+          <label for="emailfield">Your email address:</label>
+          <input form="contform" type="text" name="email" id="emailfield" placeholder="anders.andersen@mymail.com" inputmode="email" pattern="email" />
+        </div>
+        <div>
+          <label for="messagefield">Your message:</label>
+          <textarea form="contform" type="text" name="message" id="messagefield" placeholder="Hello..."></textarea>
+        </div>
+      </form>
+      <div class="sendknapogtekt">
+        <span class="helptext">Average reply time: 24 hours.</span>
+      </div>
+      <div class="send">
+        <button class="sendbtn"> Send</button>
+      </div>
+    </div>
+  </section>
+</section>
+
+<script>
+  document.getElementById("contact.html").style.backgroundColor = "var(--nav-bg-current)";
+  document.getElementById("contact.html").firstChild.style.color = "var(--nav-currentwhite)";
+</script>
+
+<style>
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    color: #ff5e78;
+    margin-top: 100px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #messagefield {
+    padding: 10px;
+    padding-left: 15px;
+    height: 100px;
+    width: 300px;
+  }
+  .sendknapogtekt {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .sendbtn {
+    color: white;
+    background-color: #ff5e78;
+    border: none;
+    font-size: 1.6667rem;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  #contactinfo {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 60rem;
+    margin: 5rem auto 25rem;
+    /* border: 3px solid black; */
+    text-align: left;
+  }
+
+  #infocol {
+    display: grid;
+    gap: calc(var(--spacing-max) * 2);
+    color: #4b4b4b;
+  }
+
+  .overskrifter {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    color: #ff5e78;
+    text-align: center;
+  }
+  .helptext {
+    color: #4b4b4b;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  .contactshortcuts {
+    display: grid;
+    gap: var(--spacing-min);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #contform {
+    display: grid;
+    gap: var(--spacing-max);
+    padding-top: 1px;
+    max-width: 500px;
+  }
+
+  .contactindhold {
+    background-color: #ffebee;
+    padding-top: 1px;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+
+  p {
+    max-width: 450px;
+  }
+
+  label {
+    color: #4b4b4b;
+  }
+  @media screen and (max-width: 1024px) {
+    #contactinfo {
+      flex-flow: column;
+      margin-top: 0 auto 25rem;
+      max-width: max-content;
+      gap: var(--spacing-max);
+    }
+
+    .sendknapogtekt {
+      margin-left: 10px;
+    }
+
+    .send {
+      margin-left: 10px;
+    }
+
+    p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #contform {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .contactshortcuts {
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2.1667rem;
+    }
+
+      #messagefield {
+    padding: 10px;
+    padding-left: 15px;
+    height: 100px;
+    width: 470px;
+  }
+  }
+</style>

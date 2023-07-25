@@ -142,9 +142,73 @@ const img = Astro.props.img;
   @media (max-width: 952px) {
     .outer {
       height: 500px;
-      width: 900px;
+      width: 370px;
       background-color: #ffebee;
       border-radius: 5px;
     }
+
+    .billedecontainer {
+      height: 180px;
+      display: inline-block;
+      width: 350px;
+      justify-content: center;
+      background-color: #ffabee;
+      margin: 10px;
+      border-radius: 5px;
+      flex-grow: 1;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .tekstctaa {
+display: none;
+      align-content: center;
+    }
+
+    .tekstctaa a {
+     display: none;
+    }
+
+    .tekstcontainer {
+      border-radius: 5px;
+      position: relative;
+      text-align: center;
+      flex-flow: column;
+      overflow: scroll;
+    }
+    
+
+  .tekst1 p {
+    color: #4b4b4b;
+    font-size: 26px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .tekst2 {
+    max-width: 700px;
+  }
+
+  .tekst2 p {
+    color: #4b4b4b;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .tekst3 {
+   text-align: center;
+  }
+
+  .tekst3 p {
+    color: #4b4b4b;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: bold;
+  text-align: center;
+  padding: 30px;
   }
 </style>
