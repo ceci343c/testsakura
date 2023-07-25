@@ -1,0 +1,26 @@
+---
+import Mapinfo from "./Mapinfo.astro";
+---
+
+<section>
+  <img src="public/img/map.svg" alt="Map" />
+  <Mapinfo />
+</section>
+
+<style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 45%;
+    }
+  }
+</style>

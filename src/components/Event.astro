@@ -4,7 +4,7 @@ const eventsData = [
     img: "./img/eventbillede1.svg",
     alt: "billede",
     title: "Test",
-    shortText: "A colorful day",
+    shortText: "Jeg keder mig en lill e smilesdbfkjashgfushgioewhfjkhasdfhusdhfuishdfJeg keder mig en lill e smilesdbfkjashgfushgioewhfjkhasdfhusdhfuishdfJeg keder mig en lill e ",
     timeStart: "10:00",
     timeEnd: "10:45",
     stage: "Main",
@@ -37,13 +37,15 @@ const eventsData = [
           <h2>{event.title}</h2>
 
           <p>{event.shortText}</p>
-          <p>
-            {event.timeStart} - {event.timeEnd} - {event.stage} stage
-          </p>
+          <section>
+            <p class="time">
+              {event.timeStart} - {event.timeEnd} - {event.stage} stage
+            </p>
+          </section>
 
           <div class="knap">
             <a href="#">
-              READ MORE <img src="./img/Phoneiconpink.svg" />
+              READ MORE <img src="./img/pil.svg" />
             </a>
           </div>
         </div>
@@ -53,6 +55,14 @@ const eventsData = [
 </ul>
 
 <style>
+  /* h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  } */
+
+  .time {
+  }
   article {
     background-color: var(--pink-bg);
     padding: 0.5rem;
@@ -61,6 +71,13 @@ const eventsData = [
     margin-left: 350px;
     margin-right: 350px;
     border-radius: 10px;
+  }
+
+  a {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ff5e78;
   }
 
   .tekstkasse {

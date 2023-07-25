@@ -8,15 +8,61 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="home">
   <Herosection />
   <Smalltext />
-  <section>
-    <NewsCard src="./img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
-    <NewsCard src="./img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
-    <NewsCard src="./img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
-  </section>
-</Layout>
+  <div>
+    <table class="center">
+      <tr
+        ><td align="center">
+          <section>
+            <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+            <div class="removecards">
+              <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+              <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+            </div>
+          </section>
+          <div>
+            <h1>Dont miss out on anything!</h1>
+            <p>rtryrtytrytutututyuytuerte</p>
+            <table class="center">
+              <tr
+                ><td align="center">
+                  <input form="contform" type="text" name="name" id="namefield" placeholder="Anders Andersen" />
+                </td><td> <button>Sign Up</button></td>
+              </tr>
+            </table>
+          </div></td
+        >
+      </tr>
+    </table>
+  </div>
 
-<style>
-  section .hero {
-    margin: 0;
-  }
-</style>
+  <style>
+    section .hero {
+      margin: 0;
+    }
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div {
+      background-image: ;
+    }
+    /* div {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+  } */
+
+    .removecards {
+      display: inline-block;
+      border: 1px solid red;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .removecards {
+        display: none;
+      }
+    }
+  </style>
+</Layout>

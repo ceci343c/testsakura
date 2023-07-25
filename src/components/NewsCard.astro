@@ -1,10 +1,30 @@
 ---
-const { src, alt, title, text, href } = Astro.props;
+const { img, alt, title, text, href } = Astro.props;
 ---
 
-<article>
-  <img src={src} alt={alt} />
-  <h2>{title}</h2>
-  <p>{text}</p>
-  <a href={href}></a>
-</article>
+<div class="newsbanner">
+  <article>
+    <section>
+      <div class="newscard" >
+        <image src={img} alt="bilele" />
+        <h2>{title}</h2>
+        <p>{text}</p>
+        <div class="tekstctaa">
+          <a href="#">Read more &#8250;</a>
+        </div>
+      </div>
+    </section>
+  </article>
+</div>
+
+<style>
+  .newsbanner {
+    border: 1px solid blue; 
+    display: inline-block;
+    width: 100%
+    border: 1px solid red;
+  }
+
+
+
+</style>

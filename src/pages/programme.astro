@@ -1,21 +1,33 @@
 ---
-import Programmecard from "../components/Programmecard.astro";
 import Layout from "../layouts/Layout.astro";
-import Event from "../components/Event.astro";
+import Eventcard from "../components/Eventcard.astro";
+import Programmecard from "../components/Programmecard.astro";
 ---
 
 <Layout title="programme">
-  <h1>Programme</h1>
-  <h2>22. april 2024</h2>
-  <Event />
-  <template>
-    <div class="card-container">
-      <Programmecard title="Titel 1" content="Dette er indholdet til kort 1." image="stien/til/billede1.jpg" />
-      <Programmecard title="Titel 2" content="Dette er indholdet til kort 2." image="stien/til/billede2.jpg" />
+  <section>
+    <h1>Programme</h1>
+    <h2>22. april 2024</h2>
+    <div class="eventcard">
+      <Eventcard img="../public/img/eventbillede1.svg" title="Opening Ceremony" content="A colorful and musical Opening Ceremony for this years Copenhagen Sakura Festival!" time="10.00 - 10.45 • Main stage" />
     </div>
-  </template>
+    <div class="eventcard">
+      <Eventcard />
+    </div>
+    <div class="eventcard">
+      <Eventcard />
+    </div>
+  </section>
 </Layout>
+
 <style>
+  .eventcard {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
   * {
     font-family: "Roboto", sans-serif;
   }
@@ -32,7 +44,8 @@ import Event from "../components/Event.astro";
   }
 
   h2 {
-    margin-left: 355px;
+    margin-left: 150px;
     margin-top: 80px;
+    margin-bottom: 20px;
   }
 </style>
