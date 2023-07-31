@@ -4,8 +4,8 @@ import Textbutton from "../components/Textbutton.astro";
 
 <div class="mapframe">
   <div class="tekst">
-    <h2>Join Us at Lagelinje Park</h2>
-    <p>Located right in the heart of Copenhagen, Langelinje Park hosts the Sakura Festival every year.</p>
+    <h2>Join us at Langelinie Park</h2>
+    <p>Located right in the heart of Copenhagen, Langelinie Park hosts the Sakura Festival every year.</p>
     <p>Get lost in the magic of the blossoming Sakura trees and enjoy a wonderful weekend with your friends and familiy.</p>
     <Textbutton href="https://www.openstreetmap.org/#map=19/55.69061/12.59970" target="_blank">
       <span slot="label">Get directions &#8250;</span>
@@ -40,6 +40,7 @@ import Textbutton from "../components/Textbutton.astro";
 
   h2 {
     margin-bottom: 20px;
+    text-transform: none;
   }
 
   @media screen and (max-width: 1024px) {
@@ -51,6 +52,7 @@ import Textbutton from "../components/Textbutton.astro";
       margin: 20px;
       padding: 2rem;
       gap: 0;
+      margin-top: -500px;
     }
 
     h2 {

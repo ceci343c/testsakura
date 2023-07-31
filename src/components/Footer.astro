@@ -6,16 +6,15 @@
       <a href="#">Sponsors</a><a href="#">Archive</a><a href="#">contact</a>
     </div>
     <div class="liste1">
-      <a href="#">Home</a><a href="#">About</a><a href="#">News</a>
-      <a href="#">Sponsors</a><a href="#">Archive</a><a href="#">contact</a>
+      <a href="#"><h4>Participate</h4></a><a href="#">Programme</a><a href="#">Map/Booths</a>
+      <a href="#">Get directions</a><a href="#">For Companies</a><a href="#">For Organisations</a>
     </div>
     <div class="liste1">
-      <a href="#">Home</a><a href="#">About</a><a href="#">News</a>
-      <a href="#">Sponsors</a><a href="#">Archive</a><a href="#">contact</a>
+      <a href="#"><h4>Legal</h4></a><a href="#">Privacy</a><a href="#">Use of cookies</a>
     </div>
     <div class="liste1">
-      <a href="#">Home</a><a href="#">About</a><a href="#">News</a>
-      <a href="#">Sponsors</a><a href="#">Archive</a><a href="#">contact</a>
+      <a href="#"><h4>Embassy of Japan</h4></a><a href="#">Havneholmen 25, 9F</a><a href="#">1561 København V</a>
+      <a href="#">(+45) 3345 5121</a><a href="#">(+45) 3311 3377</a><a href="#">info.cph@ch.mofa.go.jp</a>
     </div>
   </div>
   <p>Unsolicited Web Redesign by Cecillie Andersen Illustrations from The Noun Project licenced under a Creative Commons Attribution 3.0 International License.</p>
@@ -26,15 +25,27 @@
     margin-top: 40px;
     margin-left: 40px;
   }
+
+  a {
+    color: #7e7e7e;
+  }
+
+  h4 {
+    color: #7e7e7e;
+  }
   p {
     padding-bottom: 20px;
     text-align: center;
+    color: #7e7e7e;
+    font-size: 15px;
   }
   .listen {
     display: grid;
     grid-template-columns: repeat(1fr, 5);
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
+    margin-left: 200px;
+    margin-top: 30px;
   }
   .liste1 {
     display: flex;
@@ -45,7 +56,33 @@
   }
 
   * {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+
+    .liste1 {
+      padding: 5px;
+      margin-left: -180px;
+    }
+
+    p {
+      padding-bottom: 20px;
+      margin-left: 2px;
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+      font-size: 10px;
+    }
+
+    a {
+      padding-right: 179px;
+    }
   }
 </style>

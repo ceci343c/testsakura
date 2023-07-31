@@ -9,64 +9,206 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="home">
   <Herosection />
   <Smalltext />
-  <div>
-    <table class="center">
-      <tr
-        ><td align="center">
-          <section>
-            <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
-            <div class="removecards">
-              <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
-              <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="Hej" , text="flefnejfwkfwfewfewf" , href="#" />
+  <div class="baggrundsbillede">
+    <div>
+      <table class="center">
+        <tr
+          ><td align="center">
+            <section class="nyheder">
+              <div class="nyhedoverskrift"><h1>Latest News</h1></div>
+              <NewsCard img="/public/img/nyhed1.svg" alt="lol" , title="Ambassador Komo Panoshita meets with the Queen" , text="His Excellency, Ambassador Panoshita, had the honor of meeting with Her Majesty Queen Margrethe II of Denmark on May 18th, 2023. The meeting was held at the Amalienborg Palace in Copenhagen." , href="#" />
+              <div class="removecards">
+                <NewsCard img="/public/img/nyhed1.svg" alt="lol" , title="Exclusive Yatoku manga displayed at Faraos Cigarer" , text="This year’s festival will feature an exclusive collection of Yatoku Manga, which will be displayed at Faraos Cigarer Shop for the first time in Denmark. Come and see them with your own eyes. You will not miss this. " , href="#" />
+                <NewsCard img="/public/img/eventbillede1.svg" alt="lol" , title="The story behind the original Sakura trees in Copenhagen" , text="The Sakura trees in Copenhagen have a rich history dating back to 2005 when the first were planted in Langelinie Park. The Sakura trees are a symbol of friendship between Japan and Denmark." , href="#" />
+              </div>
+            </section>
+            <div class="nyheder">
+              <h1>Dont miss out on anything!</h1>
+              <p>Receive the upcoming fascinating events, guests and activities.</p><p>Sign up for our newsletter and get the most relevant updates about the festival right in your inbox.</p>
             </div>
-          </section>
-          <div>
-            <h1>Dont miss out on anything!</h1>
-            <p>rtryrtytrytutututyuytuerte</p>
             <table class="center">
               <tr
                 ><td align="center">
-                  <input form="contform" type="text" name="name" id="namefield" placeholder="Anders Andersen" />
+                  <input form="contform" type="text" name="name" id="namefield" placeholder="Mira@gmail.com" />
                 </td><td> <button>Sign Up</button></td>
               </tr>
             </table>
-          </div></td
+          </td></tr
         >
-      </tr>
-    </table>
-    <div>
-      <Infomap />
+      </table>
     </div>
   </div>
+  <div class="kort">
+    <Infomap />
+  </div>
+  <div class="container">
+    <div class="origamihund">
+      <img src="public/img/origamihund.svg" alt="Billede" />
+    </div>
+    <div class="text">
+      <h1 class="entranceoverskrift">Free Entrance</h1>
+      <p class="entrancetext">As always, the entrance to the festival is free for everyone. We are excited to welcome people from all over Denmark and the Copenhagen area to experience some of the best Japan has to offer.</p>
+    </div>
+  </div>
+</Layout>
 
-  <style>
-    section .hero {
-      margin: 0;
-    }
+<style>
+  .container {
+    display: flex;
 
-    .center {
-      margin-left: auto;
-      margin-right: auto;
-    }
+  }
 
-    div {
-      background-image: ;
-    }
-    /* div {
+  .origamihund {
+    flex: 1; 
+    margin-left: 200px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+  .entranceoverskrift {
+    text-align: left;
+    margin-top: 170px;
+  }
+  .entrancetext {
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 100px;
+    /* Delen, der indeholder teksten, vil tage 2/3 af bredden */
+  }
+  section .hero {
+    margin: 0;
+  }
+
+  .nyhedoverskrift {
+    text-align: left;
+    margin-left: 40px;
+    color: #4b4b4b;
+    margin-top: 100px;
+    margin-bottom: -40px;
+  }
+  h1 {
+    margin-bottom: 20px;
+    color: #4b4b4b;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: -100px;
+  }
+
+  .baggrundsbillede {
+    background-image: url(public/img/nyheder2.svg);
+  }
+
+  .latestnews {
+    color: blue;
+    margin-left: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+
+  p {
+    text-align: center;
+    width: 700px;
+    color: #4b4b4b;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 340px;
+    margin-top: 5px;
+  }
+
+  .kort {
+    margin-top: -300px;
+  }
+
+  div {
+  }
+  /* div {
     display: flex;
     align-items: center;
     border: 1px solid red;
   } */
 
+  .removecards {
+    display: inline-block;
+  }
+
+  button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background: #ff5e78;
+    color: white;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 1024px) {
     .removecards {
-      display: inline-block;
-      border: 1px solid red;
+      display: none;
     }
 
-    @media screen and (max-width: 1024px) {
-      .removecards {
-        display: none;
-      }
+    .container {
+      flex-direction: column; /* Skifter layout til stakket (billedet over teksten) */
     }
-  </style>
-</Layout>
+
+    .origamihund {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 80px;
+    }
+
+    .entranceoverskrift {
+      text-align: left;
+      margin-top: -120px;
+      margin-left: 30px;
+    }
+    .entrancetext {
+      text-align: left;
+      margin-top: 30px;
+      margin-left: 30px;
+      /* Delen, der indeholder teksten, vil tage 2/3 af bredden */
+    }
+    .center {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 340px;
+      margin-top: 5px;
+    }
+
+    p {
+      text-align: center;
+      max-width: 400px;
+      margin-left: 15px;
+    }
+    .nyhedoverskrift {
+      margin-left: 40px;
+      color: #4b4b4b;
+      margin-top: 200px;
+      margin-bottom: -70px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #4b4b4b;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: xx-large;
+      margin-top: -100px;
+      margin-left: 10px;
+    }
+
+    .baggrundsbillede {
+      background-image: url(public/img/nyhedermobil.svg);
+      background-color: #ffebee;
+    }
+  }
+</style>
