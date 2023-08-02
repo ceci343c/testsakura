@@ -7,7 +7,7 @@ const { img, alt, title, text, href } = Astro.props;
     <section>
       <div class="newscard">
         <image src={img} alt="billede" />
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{text}</p>
         <div class="tekstctaa">
           <a href="#">Read more &#8250;</a>
@@ -30,7 +30,7 @@ const { img, alt, title, text, href } = Astro.props;
     max-width: 300px;
   }
 
-  h2 {
+  h3 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 20px;
