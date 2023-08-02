@@ -1,5 +1,7 @@
 ---
 import Textbutton from "../components/Textbutton.astro";
+import "../styles/global.css";
+import "../styles/tokens.css";
 ---
 
 <section id="thatsall">
@@ -27,7 +29,7 @@ import Textbutton from "../components/Textbutton.astro";
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 50px;
-    color: #ff5e78;
+    color: var(--pink: );
   }
   @media screen and (max-width: 1024px) {
     h2 {
@@ -35,7 +37,7 @@ import Textbutton from "../components/Textbutton.astro";
       font-family: "Roboto", sans-serif;
       font-weight: bold;
       font-size: 30px;
-      color: #ff5e78;
+      color: var(--pink: );
     }
     #thatsall {
       margin: 5rem auto;
