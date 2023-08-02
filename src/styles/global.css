@@ -50,6 +50,14 @@ header {
 } */
 
 
+
+h2 {
+  font-weight: var(--h2-desktop-font-weight);
+  font-size: var(--h2-desktop-font-size);
+  line-height: 0.8em;
+  text-transform: var(--textcase-capitalize);
+}
+
 .tiletitle {
   font-weight: var(--tile-title-desktop-font-weight);
   font-size: var(--size-third-desktop);
@@ -60,6 +68,7 @@ header {
 .tiledesc {
   margin: 0;
 }
+
 
 
 .und {
