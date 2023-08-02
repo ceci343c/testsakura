@@ -49,19 +49,6 @@ header {
   text-align: center;
 } */
 
-h1 {
-  font-weight: var(--h1-desktop-font-weight);
-  font-size: var(--h1-desktop-font-size);
-  break-after: var(--h1-mobile-paragraph-spacing);
-  text-transform: var(--textcase-capitalize);
-}
-
-h2 {
-  font-weight: var(--h2-desktop-font-weight);
-  font-size: var(--h2-desktop-font-size);
-  line-height: 0.8em;
-  text-transform: var(--textcase-capitalize);
-}
 
 .tiletitle {
   font-weight: var(--tile-title-desktop-font-weight);
@@ -74,13 +61,6 @@ h2 {
   margin: 0;
 }
 
-p {
-  font-family: var(--body-text-desktop-font-family);
-  font-weight: var(--body-text-desktop-font-weight);
-  line-height: var(--body-text-desktop-line-height);
-  font-size: var(--body-text-desktop-font-size);
-  margin-bottom: var(--body-text-desktop-paragraph-spacing);
-}
 
 .und {
   font-weight: bold;
