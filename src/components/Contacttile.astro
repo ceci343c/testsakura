@@ -2,6 +2,9 @@
 const contacttxtn = Astro.props.display;
 const link = Astro.props.href;
 const target = Astro.props.target;
+import "../styles/tokens.css";
+import "../styles/contact.css";
+import "../styles/global.css";
 ---
 
 <li>
@@ -25,7 +28,9 @@ const target = Astro.props.target;
     /* background-color: aqua; */
     /* margin-bottom: var(--spacing-normal); */
     border-radius: var(--br-thumbnail);
+    border-radius: 4;
     transition: var(--standard-transition);
+    transition: 0.3s;
     padding-right: var(--spacing-min);
     font-family: "Roboto", sans-serif;
   }
@@ -37,11 +42,14 @@ const target = Astro.props.target;
     height: 45px;
 
     border-radius: var(--br-thumbnail);
+    border-radius: 4;
   }
 
   .contacttext {
     color: #4b4b4b;
     font-size: var(--body-text-desktop-font-size);
+    font-size: 1.19rem;
     font-weight: var(--body-text-desktop-font-weight);
+    font-weight: 600;
   }
 </style>

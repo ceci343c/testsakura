@@ -24,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
             </section>
             <div class="nyheder">
               <h1>Dont miss out on anything!</h1>
-              <p>Receive the upcoming fascinating events, guests and activities.</p><p>Sign up for our newsletter and get the most relevant updates about the festival right in your inbox.</p>
+              <p class="teksttilcontact">Receive the upcoming fascinating events, guests and activities.</p><p>Sign up for our newsletter and get the most relevant updates about the festival right in your inbox.</p>
             </div>
             <table class="center">
               <tr
@@ -160,6 +160,9 @@ import Layout from "../layouts/Layout.astro";
       flex-direction: column; /* Skifter layout til stakket (billedet over teksten) */
     }
 
+    .nyheder {
+      margin-left: 60px;
+    }
     .origamihund {
       display: block;
       margin-left: auto;
@@ -180,20 +183,19 @@ import Layout from "../layouts/Layout.astro";
       margin-left: 15px;
     }
     .nyhedoverskrift {
-      margin-left: 40px;
+      text-align: center;
       color: #4b4b4b;
-      margin-top: 200px;
-      margin-bottom: -70px;
     }
 
     h1 {
+      text-align: center;
       margin-bottom: 20px;
       color: #4b4b4b;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
       font-size: 34px;
       margin-top: -100px;
-      margin-left: 10px;
+      margin-right: 100px;
     }
 
     .baggrundsbillede {
@@ -204,7 +206,6 @@ import Layout from "../layouts/Layout.astro";
     .entranceoverskrift {
       text-align: center;
       margin-top: -90px;
-      margin-left: 30px;
     }
     .entrancetext {
       text-align: center;
