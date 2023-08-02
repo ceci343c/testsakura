@@ -13,7 +13,6 @@
   --h1-desktop-paragraph-spacing: 0;
   --h1-mobile-font-family: "articulat-cf", Arial, sans-serif;
   --h1-mobile-font-weight: 900;
-  --h1-mobile-font-size: 1.95rem;
   --h1-mobile-paragraph-spacing: 0;
   --h1-mobile-text-case: ;
   --primbutton-text: #f8f8f8;
@@ -277,7 +276,7 @@
   --subtle: #bcbcbc;
   --parspacing-broad: 1.2em;
   --radius-mini: 2px;
-  --help: #a0a0a0;
+  --help: #4b4b4b;
   --lineheight-readable: 1.25em;
   --floating-shadow-x: 2;
   --floating-shadow-y: 2;
