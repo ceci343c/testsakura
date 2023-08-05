@@ -3,11 +3,12 @@ const content = Astro.props.content;
 const time = Astro.props.time;
 const title = Astro.props.title;
 const img = Astro.props.img;
+const alttekst = Astro.props.alttekst; 
 ---
 
 <div class="outer">
   <div class="billedecontainer">
-    <img src={img} alt="Billede" />
+    <img src={img} alt={alttekst} />
   </div>
 
   <div class="tekstcontainer">
@@ -30,14 +31,8 @@ const img = Astro.props.img;
 </div>
 
 <style>
-  .outer {
-    height: 200px;
-    width: 1250px;
-    background-color: #ffebee;
-    border-radius: 5px;
-  }
 
-  .billedecontainer {
+    .billedecontainer {
     height: 180px;
     display: inline-block;
     width: 260px;
@@ -47,6 +42,14 @@ const img = Astro.props.img;
     border-radius: 5px;
     flex-grow: 1;
   }
+
+  .outer {
+    height: 200px;
+    width: 1250px;
+    background-color: #ffebee;
+    border-radius: 5px;
+  }
+
 
   .billedecontainer img {
     width: 100%;

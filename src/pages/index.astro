@@ -19,15 +19,17 @@ import "../styles/global.css";
           ><td align="center">
             <section class="nyheder">
               <div class="nyhedoverskrift"><h1>Latest News</h1></div>
-              <NewsCard img="/img/nyhed1.svg" alt="lol" , title="Ambassador Komo Panoshita meets with the Queen" , text="His Excellency, Ambassador Panoshita, had the honor of meeting with Her Majesty Queen Margrethe II of Denmark on May 18th, 2023. The meeting was held at the Amalienborg Palace in Copenhagen." , href="#" />
+              <NewsCard img="/img/nyhed1.svg" alt="A image of the from the newsevent with Ambassador Komo Panoshita on stage waiting for the queen." , title="Ambassador Komo Panoshita meets with the Queen" , text="His Excellency, Ambassador Panoshita, had the honor of meeting with Her Majesty Queen Margrethe II of Denmark on May 18th, 2023. The meeting was held at the Amalienborg Palace in Copenhagen." , href="#" />
               <div class="removecards">
-                <NewsCard img="/img/nyheder02.svg" alt="lol" , title="Exclusive Yatoku manga displayed at Faraos Cigarer" , text="This year’s festival will feature an exclusive collection of Yatoku Manga, which will be displayed at Faraos Cigarer Shop for the first time in Denmark. Come and see them with your own eyes. You will not miss this. " , href="#" />
-                <NewsCard img="/img/nyheder03.svg" alt="lol" , title="The story behind the original Sakura trees in Copenhagen" , text="The Sakura trees in Copenhagen have a rich history dating back to 2005 when the first were planted in Langelinie Park. The Sakura trees are a symbol of friendship between Japan and Denmark." , href="#" />
+                <NewsCard img="/img/nyheder02.svg" alt="Faraous cigar logo for the news about exclusive manga." , title="Exclusive Yatoku manga displayed at Faraos Cigarer" , text="This year’s festival will feature an exclusive collection of Yatoku Manga, which will be displayed at Faraos Cigarer Shop for the first time in Denmark. Come and see them with your own eyes. You will not miss this. " , href="#" />
+                <NewsCard img="/img/nyheder03.svg" alt="Beautiful avenue with sakura trees and blossoms." , title="The story behind the original Sakura trees in Copenhagen" , text="The Sakura trees in Copenhagen have a rich history dating back to 2005 when the first were planted in Langelinie Park. The Sakura trees are a symbol of friendship between Japan and Denmark." , href="#" />
               </div>
             </section>
             <div class="nyheder">
               <h1>Dont miss out on anything!</h1>
-              <p class="teksttilcontact">Receive the upcoming fascinating events, guests and activities.</p><p>Sign up for our newsletter and get the most relevant updates about the festival right in your inbox.</p>
+              <div class="teksttilcontact">
+                <p>Receive the upcoming fascinating events, guests and activities.</p> <br> <p>Sign up for our newsletter and get the most relevant updates about the festival right in your inbox.</p>
+              </div>
             </div>
             <table class="center">
               <tr
@@ -46,7 +48,7 @@ import "../styles/global.css";
   </div>
   <div class="container">
     <div class="origamihund">
-      <img src="/img/origamihund.svg" alt="Billede af grafisk origamihund " />
+      <img src="/img/origamihund.svg" alt="Image of graphic blue origami dog." />
     </div>
     <div class="text">
       <h1 class="entranceoverskrift">Free Entrance</h1>
@@ -58,6 +60,10 @@ import "../styles/global.css";
 <style>
   .container {
     display: flex;
+  }
+
+  .teksttilcontact {
+    font-size: 24px;
   }
 
   .origamihund {
@@ -74,6 +80,7 @@ import "../styles/global.css";
     text-align: left;
     margin-top: 30px;
     margin-right: 100px;
+    font-size: 24px;
     /* Delen, der indeholder teksten, vil tage 2/3 af bredden */
   }
   section .hero {
@@ -145,7 +152,7 @@ import "../styles/global.css";
     margin-bottom: 50px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    background: #F94361;
+    background: #f94361;
     color: white;
     border: none;
     font-size: 24px;
